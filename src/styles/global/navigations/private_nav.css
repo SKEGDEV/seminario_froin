@@ -1,0 +1,48 @@
+.private-nav{
+  width: 100%;
+  height: 80px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  margin: -5px 0px 0px -8px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+}
+
+.private-nav img{
+  margin: 0px 0px 0px 20px;
+}
+
+.private-nav .nav-list{
+  display: flex;
+  flex-direction: row;
+  margin: 40px 0px 0px 38%;
+}
+
+.private-nav .nav-list li{
+  margin-left: 15px;
+}
+
+.private-nav .nav-list li a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: all .5s ease-in-out;
+}
+
+.private-nav .nav-list li a:hover{
+  border-bottom: 2px solid;
+  border-color: white;
+  color: cyan;
+}
+
+.private-nav .nav-list li .i{
+  transform: translateY(-5px);
+  font-size: 35px;
+}
+
+.private-nav .nav-list li .i:hover{
+  color: red;
+}

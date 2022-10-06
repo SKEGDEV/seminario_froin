@@ -1,0 +1,192 @@
+.public-nav{
+  
+  width: 100%;
+  height: 90px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
+  margin: 0px 0px 50px 0px;
+}
+
+.public-nav .burger-btn{
+  width: 50px;
+  height: 50px;
+  margin: 0px 0px 0px 20px;
+  transform: translateY(20px);
+  overflow-x: hidden;
+}
+
+.public-nav .burger-btn .line1,
+.public-nav .burger-btn .line2,
+.public-nav .burger-btn .line3{
+  width: 50px;
+  height: 3px;
+  background-color: white;
+  margin: 10px 0px 0px 0px;
+  transition: all .5s ease-in-out;
+}
+
+.public-nav .bg-back{
+  width: 96%;
+  height: 0px;
+  margin: 70px 0px 0px 0px; 
+  background-image: url("../../../img//bg_landing.jpg");
+  background-repeat:none;
+  background-size: cover;
+  background-position: bottom center;
+  border-radius: 10px;
+  transition: all .5s ease-in-out;
+}
+
+.public-nav .filter-bg{
+  margin: 70px 0px 0px 0px; 
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  width: 96%;
+  height: 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  overflow-y: hidden;
+  border-radius: 10px; 
+  transition: all .5s ease-in-out;
+}
+
+.public-nav .filter-bg ul{
+  list-style: none;
+  margin-left: -20px;
+}
+
+.public-nav .filter-bg ul li{
+  margin: 0px 0px 45px 0px;
+}
+
+.public-nav .filter-bg ul li a{ 
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.public-nav .filter-bg img{
+  width: 300px;
+  height: 150px ;
+  margin: 30px 0px 0px 0px;
+}
+
+/*Activate menu*/
+.public-nav .expand{
+  height: 600px;
+  position: absolute;
+}
+
+.public-nav .btn-activate .line1{
+  transform: rotate(-50deg); 
+  margin-top: 20px;
+}
+
+.public-nav .btn-activate .line2{
+  transform: translateX(1000px);
+}
+
+.public-nav .btn-activate .line3{
+  transform: rotate(50deg);
+  margin-top: -15px;
+}
+
+/*responsive design*/
+@media only screen and (min-width:1260px){
+.burger-btn{
+ display: none; 
+}
+.public-nav{
+  width: 97%;
+  height: 50%;
+  overflow: hidden;
+  padding: 0px;
+  margin: -8px 0px 530px -9px;
+}
+
+.public-nav .bg-back{
+  width: 100%;
+  height: 500px;
+  background-image: url("../../../img//bg_landing.jpg");
+  background-repeat:none;
+  background-size: cover;
+  background-position: bottom center;
+  position: absolute;
+  margin: 0px 0px 0px 0px;
+  border-radius: 0px;
+}
+
+.public-nav .filter-bg{
+ position: absolute; 
+ background: rgba(0, 0, 0, 0.3);
+ border-radius: 16px;
+ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+ backdrop-filter: blur(7.7px);
+ -webkit-backdrop-filter: blur(7.7px);
+ width: 100%;
+ height: 500px;
+ display: flex;
+ flex-direction: row;
+ margin: 0px 0px 0px 0px;
+ border-radius: 0px;
+}
+
+.public-nav .filter-bg img{
+  width: 300px;
+  height:150px;
+  margin-top: 350px;
+}
+
+.public-nav .filter-bg ul{
+  list-style: none;
+  margin: 450px 0px 0px 15%;
+  display: flex;
+  flex-direction: row;
+}
+
+.public-nav .filter-bg li a{
+  margin: 0px 0px 0px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all .5s ease-in-out;
+}
+
+.public-nav .filter-bg a:hover {
+  border-bottom: 2px solid;
+  border-color: white;
+  color: cyan;
+
+}
+
+/*nav float*/
+.down .bg-back,
+.down .filter-bg{
+  height: 100px;
+  width: 100%;
+ 
+}
+.down{
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  margin:-8px 0px 0px -6px;
+}
+.down .bg-back{
+  background: none;
+}
+
+.down .filter-bg img{
+  margin-top: 0px;
+  width: 175px;
+  height: 80px;
+}
+
+.down .filter-bg ul{
+  margin: 30px 0px 0px 25%; 
+}
+}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  padding: 0px;
+}
+
+.create-client{
+  width: 100%;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+  border-radius: 10px;
+  margin: 0px 0px 45px 0px;
+  padding-top: 30px;
+}
+
+.create-client .header{
+  margin: 0px 0px 30px 0px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1000px){
+.create-client{
+  width: 60%;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+  border-radius: 10px;
+  margin: 0px 0px 45px 20%;
+  padding-top: 30px;
+}
+
+.create-client .header{
+  margin: 0px 0px 30px 0px;
+  text-align: center;
+}
+}

@@ -1,0 +1,13 @@
+/*btn-box design*/
+
+.btn-box{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.btn-box .btn-left,
+.btn-box .btn-right{
+  width: 40%;
+  margin: 0px 0px 0px 5%;
+}

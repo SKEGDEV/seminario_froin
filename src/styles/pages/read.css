@@ -1,0 +1,66 @@
+.clients{
+  width: 95%;
+  margin: 0px 0px 30px 2.5%;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+.clients .header{
+  width: 90%;
+  margin:0px 0px 30px 5%;
+  border-bottom: 1px solid;
+}
+
+.clients .success,
+.clients .warning{
+  margin: 20px 0px 20px 0px;
+}
+
+.client-table{
+  width: 95%;
+  margin: 0px 0px 0px 2.5%;
+  display: grid;
+  grid-gap: 2%;
+  grid-template-columns: 15% 15% 15% 15% 15% 15%;
+}
+
+.client-table .r-h,
+.client-table .r-b{
+  text-align: center;
+  color: white;
+}
+
+.client-table .r-h{
+  border-bottom: 1px solid;
+  margin-bottom: 10px;
+}
+
+.client-table .r-b{  
+  border-bottom: 1px solid;
+  border-color: gray;
+}
+
+.client-table .r-b .primary{
+  margin: 0px 0px 0px 0px;
+}
+
+.search-box{
+  width: 95%;
+  margin: 20px 0px 20px 2.5%;
+}
+
+@media only screen and (max-width:650px){
+  .client-table{
+    grid-template-columns: 30% 30% 30%;
+    width: 100%;
+    margin: 15px;
+  }
+  .client-table .hide{
+    display: none;
+  } 
+  .clients{
+    width: 100%;
+    margin: 0px 0px 30px 0%;
+  }
+}
