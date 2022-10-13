@@ -15,8 +15,11 @@ export default class auth_user{
     try{
       const json_response = await axios.post(process.env.REACT_APP_URL_BASE+process.env.REACT_APP_URL_SIGNIN, user_search);
       if('token' in json_response.data){
-	Activate('Bienvenido: '+json_response.data['firstname'],'success');
-	return;
+	Activate('Bienvenido: '+json_response.data['firstname'],'success');	
+	setTimeout(()=>{
+	  window.location.replace(process.env.REACT_APP_PC_URL+"usuarios-registrados");
+	  return;
+	},2000)
       }
       Activate(json_response.data['msm'],'info');
     }catch(e){
