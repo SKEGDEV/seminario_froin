@@ -14,6 +14,9 @@ import Client_record from '../pages/read/client_record.jsx';
 import Loans from '../pages/read/loans.jsx';
 import Create_loan from '../pages/create/create_loan.jsx';
 import Get_payment from '../pages/read/get_payment.jsx';
+import History from '../pages/read/history.jsx';
+import Payment from '../pages/read/payment.jsx';
+import Dashboard from '../pages/read/dashboard.jsx';
 import App from '../App.js'
 
 export default function Router_func(){
@@ -23,13 +26,16 @@ export default function Router_func(){
      <Router>
        <Routes>
         <Route path="/" element={<Homepage />}/>
+        <Route path="/realizar-pagos" element={<Payment/>}/>
         <Route path="/iniciar-sesion" element={<Login/>}/> 
+        <Route path="/dashboard" element={<Dashboard/>}/>
         <Route path="/usuarios-inactivos" element={<Users_disble/>}/>
         <Route path="/usuarios-registrados" element={<Users />}/>
         <Route path="/prestamos" element={<Loans/>}/>
         <Route path="/crear-prestamo/:amount/:quote/:date/:interest/:period/:type_interest" element={<Create_loan/>}/>
         <Route path="/ficha-usuario/:id" element={<User_record/>}/>
         <Route path="/ficha-cliente/:id" element={<Client_record/>}/>
+        <Route path="/historial/:id/:client" element={<History/>}/>
         <Route path="/actualizar-usuario/:id" element={<Update_user/>}/>
         <Route path="/crear-usuario" element={<Create_user/>}/>
         <Route path="/ver-pago/:id/:client" element={<Get_payment/>}/>

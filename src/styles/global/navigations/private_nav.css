@@ -11,6 +11,10 @@
   -webkit-backdrop-filter: blur(7.7px);
 }
 
+.private-nav .nav-list .no{
+  display: none;
+}
+
 .private-nav img{
   margin: 0px 0px 0px 20px;
 }

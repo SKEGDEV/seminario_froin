@@ -17,8 +17,9 @@ export default class auth_user{
       if('token' in json_response.data){
 	Activate('Bienvenido: '+json_response.data['firstname'],'success');	
 	localStorage.setItem('token', json_response.data['token']);
+	localStorage.setItem('rol', json_response.data['rol']);
 	setTimeout(()=>{
-	  window.location.replace(process.env.REACT_APP_PC_URL+"usuarios-registrados");
+	  window.location.replace(process.env.REACT_APP_PC_URL+"clientes-registrados");
 	  return;
 	},2000)
       }

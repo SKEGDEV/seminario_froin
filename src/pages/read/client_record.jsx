@@ -130,6 +130,9 @@ export default function Client_redord(){
         <div className="r-h hide"><h4>Cuotas pagadas</h4></div> 
         <div className="r-h hide"><h4>Fecha de pago</h4></div>
         <div className="r-h hide"><h4>Pagar</h4></div>
+        <div className="r-h">
+          <h4>Historial</h4>
+        </div>
     {loans.map(data=>(
     <>
         <div className="r-b hide"><p>{data[1]}</p></div>
@@ -137,6 +140,11 @@ export default function Client_redord(){
         <div className="r-b hide"><p>{data[3]}</p></div>  
         <div className="r-b hide"><p>{data[4]}</p></div>
         <div className="r-b hide"><Link to={"/ver-pago/"+data[0]+"/"+id}><Btn_global btn_title="Pagar" btn_type="btn primary"/></Link></div>
+        <div className="r-b">
+          <Link to={"/historial/"+data[0]+"/"+id}>
+            <Btn_global btn_title="Historial" btn_type="btn primary"/>
+          </Link>
+        </div>
     </>
     ))}
       </div>
