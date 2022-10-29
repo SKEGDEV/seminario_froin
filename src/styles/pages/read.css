@@ -25,8 +25,56 @@
   display: grid;
   grid-gap: 2%;
   grid-template-columns: 15% 15% 15% 15% 15% 15%;
-  overflow: scroll;
+  overflow-y: scroll; 
 }
+
+.client-loan{
+  grid-template-columns: 23% 23% 23% 23%;
+}
+
+.client-loan .r-b .img-loan{
+  width: 70px;
+  height: 70px;
+  border-radius: 0px;
+
+}
+
+.record-body .reference-table{
+  grid-template-columns: 32% 32% 32%;
+}
+
+.record-body .loan-table{
+  grid-template-columns: 18% 18% 18% 18% 18%;
+}
+
+/**/
+.client-table::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.client-table::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.client-table::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.client-table::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.client-table::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.client-table::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+/**/
 
 .client-table .r-h,
 .client-table .r-b{
@@ -46,6 +94,12 @@
 
 .client-table .r-b .primary{
   margin: 0px 0px 0px 0px;
+}
+
+.client-table .r-b img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .search-box{

@@ -30,10 +30,16 @@ export default function Users_disble(){
   }
 
   const get_users = async ()=>{
-    const json_user = await axios.get(process.env.REACT_APP_URL_BASE+process.env.REACT_APP_URL_GETUSERSD)
-    setUsers(json_user.data["data"]);
-    Activate(json_user.data["msm"], 'success');
-    setUsers_temp(json_user.data["data"]);
+    try{
+      const json_user = await axios.get(process.env.REACT_APP_URL_BASE+process.env.REACT_APP_URL_GETUSERSD)
+      if('data' in json_user.data){
+	setUsers(json_user.data["data"]);
+	setUsers_temp(json_user.data["data"]);
+      }
+      Activate(json_user.data["msm"], 'info');
+    }catch(err){
+      Activate("err: "+err.message, "error");
+    } 
   }
 
   useEffect(()=>{ 

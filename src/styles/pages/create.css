@@ -36,6 +36,12 @@ body{
   color: white;
 }
 
+.create-container .principal-information .checkbox{
+  color: white;
+  display: flex; 
+  flex-direction: row;
+}
+
 .create-container .secondary-information{
   width: 0px;
   margin: 0px 0px 0px 0px;
@@ -55,6 +61,41 @@ body{
   width: 200px;
 }
 
+.create-container .secondary-information .client-photo{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.create-container .secondary-information .photo-picker {
+  position: relative;
+  display: inline-block;
+  margin-bottom:40px ;
+}
+
+.create-container .secondary-information .photo-picker::before {
+  background-color: #5678EF;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  content: 'Subir foto'; 
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.create-container .secondary-information .photo-picker input[type="file"] {
+  opacity: 0;
+  width: 200px;
+  height: 32px;
+  display: inline-block;
+}
+
 .select{
   width: 95%;
   margin:0px 0px 30px 0px;
@@ -67,6 +108,10 @@ body{
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
   border-radius: 5px;
   cursor: pointer;
+}
+
+.select option{
+  background-color: black;
 }
 
 /*change formulary*/
